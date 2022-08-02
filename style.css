@@ -219,6 +219,20 @@ body {
 
 .buttons {
     grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.buttons button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
 }
 
 .sidebar {

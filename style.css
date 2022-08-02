@@ -134,6 +134,7 @@ table {
 :root {
     --primary-color: rgb(221, 221, 221);
     --secondary-color: rgb(10, 147, 231);
+    font-family: 'Roboto', sans-serif;
 }
 
 body {

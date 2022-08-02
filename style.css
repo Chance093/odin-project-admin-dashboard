@@ -257,10 +257,22 @@ body {
     font-weight: 500;
 }
 
-
-
 .main {
     background-color: var(--primary-color);
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template: repeat(2, 1fr) / 1fr 300px;
+}
+
+.main .projects {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.main .announcements {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.main .trending {
     grid-area: 2 / 2 / 3 / 3;
 }
 

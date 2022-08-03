@@ -402,7 +402,6 @@ body {
 
 .main>.projects>.p-card {
     flex: 1;
-    /* background-color: gray; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: 1fr;
@@ -416,16 +415,44 @@ body {
     background-color: white;
     padding: 30px;
     box-shadow: 0px 9px 15px 0px #bdbdbd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.main>.projects>.p-card>.card>h2 {
+.main>.projects>.p-card>.card>.text>h2 {
     font-size: 1.1rem;
     font-weight: bold;
 }
 
-.main>.projects>.p-card>.card>p {
+.main>.projects>.p-card>.card>.text>p {
     margin-top: 5px;
     color: rgb(124, 124, 124);
+}
+
+.main>.projects>.p-card>.card>.icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.main>.projects>.p-card>.card>.icons>div {
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main>.projects>.p-card>.card>.icons>div:nth-of-type(1) {
+    background-image: url(svgs/star.png);
+}
+
+.main>.projects>.p-card>.card>.icons>div:nth-of-type(2) {
+    background-image: url(svgs/eye.png);
+}
+
+.main>.projects>.p-card>.card>.icons>div:nth-of-type(3) {
+    background-image: url(svgs/fork.png);
 }
 
 /* Announcements */

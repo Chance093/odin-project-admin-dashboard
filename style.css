@@ -278,6 +278,20 @@ body {
     gap: 50px;
 }
 
+.sidebar>.logo {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.sidebar>.logo>div {
+    height: 50px;
+    width: 50px;
+    background-image: url(svgs/grid.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .sidebar h1 {
     font-size: 2rem;
     font-weight: 700;
@@ -286,6 +300,53 @@ body {
 .sidebar li {
     margin-bottom: 15px;
     font-weight: 500;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.sidebar>div li>div {
+    height: 35px;
+    width: 35px;
+    background-image: url(svgs/grid.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sidebar>.navigation li:nth-of-type(1)>div {
+    background-image: url(svgs/home.svg);
+}
+
+.sidebar>.navigation li:nth-of-type(2)>div {
+    background-image: url(svgs/profile.png);
+}
+
+.sidebar>.navigation li:nth-of-type(3)>div {
+    background-image: url(svgs/message.png);
+}
+
+.sidebar>.navigation li:nth-of-type(4)>div {
+    background-image: url(svgs/history.png);
+}
+
+.sidebar>.navigation li:nth-of-type(5)>div {
+    background-image: url(svgs/tasks.png);
+}
+
+.sidebar>.navigation li:nth-of-type(6)>div {
+    background-image: url(svgs/communities.png);
+}
+
+.sidebar>.settings li:nth-of-type(1)>div {
+    background-image: url(svgs/settings.svg);
+}
+
+.sidebar>.settings li:nth-of-type(2)>div {
+    background-image: url(svgs/support.svg);
+}
+
+.sidebar>.settings li:nth-of-type(3)>div {
+    background-image: url(svgs/privacy.png);
 }
 
 /* SIDEBAR SECTION */
